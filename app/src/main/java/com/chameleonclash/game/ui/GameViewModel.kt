@@ -50,10 +50,8 @@ class GameViewModel : ViewModel() {
             colorMatchScore = 0,
             timeLeft = 15,
             seekerTap = null,
-            hint = null
         )
         seekerTap = null
-        hint = null
         startTimer()
     }
 
@@ -127,17 +125,14 @@ class GameViewModel : ViewModel() {
             currentSeeker = nextSeeker,
             phase = GamePhase.ROLE_SWAP,
             seekerTap = null,
-            hint = null
         )
         seekerTap = null
-        hint = null
     }
 
     // Back to menu
     fun goToMenu() {
         state = GameState()
         seekerTap = null
-        hint = null
     }
 
     private fun startTimer() {
